@@ -1,0 +1,33 @@
+#customization {
+    background: linear-gradient(to bottom, white, #F092DD);
+    width: 100%;
+    height: 500vh; /* this makes the actual div 5 times the height of the screen so as to allow scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+#image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+
+.customization-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover; 
+}

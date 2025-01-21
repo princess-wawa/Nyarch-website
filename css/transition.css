@@ -1,0 +1,70 @@
+.transition {
+    position: relative;
+    top: calc(120vh - 100px);
+    width: 100%;
+    height: 100px;
+    background: #00000000;
+    overflow: hidden;
+}
+
+.transition .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background: url(../images/other/wave.png);
+    background-size: 100vw 100px;
+    z-index: -3;
+    transform: scaleY(-1);
+}
+
+.transition .wave.wave1 {
+    animation: wave 15s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.transition .wave.wave2 {
+    animation: wave2 30s linear infinite;
+    z-index: 1000;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.transition .wave.wave3 {
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.transition .wave.wave4 {
+    animation: wave2 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100vw;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 100vw;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}

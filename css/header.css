@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%; 
+    background-color: #00000000;
+    color: #fff;
+    font-family: "JetBrains Mono ExtraBold", monospace;
+    z-index: 100;
+}
+
+
+.links {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    width: 70%; /* Take up 70% of the header width */
+}
+
+.link {
+    position: relative; 
+    z-index: 150;
+    padding-left: 5px;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+}
+
+/* Nyarch Button */
+.link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    z-index: 150;
+    transition: transform 0.3s ease; 
+}
+
+.link img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Rounded Buttons */
+.link.rounded a {
+    display: inline-block;
+    padding: 8px 16px; /* Adjust padding */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px; /* Less rounded corners */
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.link.rounded:hover a {
+    background-color: #F092DD; /* Pink background on hover */
+}
+
+/* Download Button */
+.download {
+    padding-left: 15%; /* Ensure 15% padding on the left side */
+    position: relative; /* Ensure position context for dropdown */
+    width: 30%; /* Take up 30% of the header width */
+    text-align: right; /* Right-align content */
+}
+
+#download-btn {
+    font-family: "JetBrains Mono ExtraBold", monospace;
+    background-color: #fff;
+    color: blue;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 150;
+    border-radius: 10px;
+}
+#download-btn img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    z-index: 150
+}
+#download-btn .arrow {
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+#download-btn{
+    width: 200px;
+} 
+.dropdown-content, 
+.location,
+.nvidia-options{
+    width: 190px;
+}
+.locations{
+    top: calc(100% + 145px) !important;
+    right: 208px;
+}
+.nvidia-options{
+    top : calc(100% + 294px) !important;
+}
+.download .dropdown-content,
+.nvidia-options{
+    right: 0;
+}
+
+.download:hover #download-btn .arrow,
+.download .dropdown-content:hover ~ #download-btn .arrow {
+    transform: rotate(90deg);
+}
+
+#download-btn .arrow.down {
+    transform: rotate(180deg);
+}
+
+
+.download .dropdown-content,
+.download .locations,
+.download .nvidia-options{
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    white-space: nowrap; /* Prevents text from wrapping */
+    z-index: 160;
+    padding:0px 4px 4px 4px;
+}
+
+.download:hover .dropdown-content,
+.download .dropdown-content:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.download-option{
+    border-radius: 10px !important;
+    padding-top: 4px;
+}
+.download-option a{
+    display: block;
+    padding-top: 5px;
+    padding: 10px;
+    border-radius: 10px !important;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: left; 
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+
+.download-option img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    margin-right: 5px;
+    z-index: 150
+}
+
+.download-option a:hover{
+    background-color: #bebebe;
+}
+
+
+/*change the size of the texts for phone */
+@media only screen and (max-width: 1100px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nyarch-button{
+        top:-20px;
+    }
+    .links{
+        position: absolute;
+        top:52px;
+        width: unset;
+    }
+    .download{
+        position: absolute;
+        top: 95px;
+        width: auto;
+        visibility: visible;
+        padding:0px 4px 4px 4px;
+    }
+    
+}
+
+.space{
+    display: inline-block;
+}
