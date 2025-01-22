@@ -7,6 +7,8 @@ html{
 }
 /* Header Styles */
 header {
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,10 +68,8 @@ header {
 
 /* Download Button */
 .download {
-    padding-left: 15%; /* Ensure 15% padding on the left side */
-    position: relative; /* Ensure position context for dropdown */
+    padding-right: 25%; /* Ensure 15% padding on the left side */
     width: 30%; /* Take up 30% of the header width */
-    text-align: right; /* Right-align content */
 }
 
 #download-btn {
@@ -105,15 +105,14 @@ header {
     width: 190px;
 }
 .locations{
-    top: calc(100% + 145px) !important;
+    top: calc(100% + 110px) !important;
     right: 208px;
 }
 .nvidia-options{
-    top : calc(100% + 294px) !important;
+    top : calc(100% + 175px) !important;
 }
-.download .dropdown-content,
-.nvidia-options{
-    right: 0;
+.dropdown-content{
+    top: calc(100% - 10px);
 }
 
 .download:hover #download-btn .arrow,
@@ -130,7 +129,6 @@ header {
 .download .locations,
 .download .nvidia-options{
     position: absolute;
-    top: calc(100% + 10px);
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px !important;

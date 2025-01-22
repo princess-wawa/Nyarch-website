@@ -116,3 +116,30 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onload = function() {
     window.scrollTo(0, 0);
 };
+
+
+
+// Select the button
+const downloadBtn = document.getElementById('download-btn');
+
+// Add hover event listener
+downloadBtn.addEventListener('mouseenter', () => {
+    window.scrollTo({
+    top: window.innerHeight * 1.5, // 150vh equivalent
+    behavior: 'smooth'
+    });
+});
+
+
+
+const header = document.getElementById('header');
+
+// Add an event listener for the scroll event
+window.addEventListener('scroll', () => {
+    // Get the scroll distance
+    const scrollY = Math.min(750, window.scrollY); // Cap the scroll value at 256
+    const alpha = scrollY / 750; // Alpha increases with scroll
+
+    // Set the background color of the header
+    header.style.backgroundColor = `rgba(33, 33, 33, ${alpha})`;
+});
