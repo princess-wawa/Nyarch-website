@@ -125,8 +125,8 @@ const downloadBtn = document.getElementById('download-btn');
 // Add hover event listener
 downloadBtn.addEventListener('mouseenter', () => {
     window.scrollTo({
-    top: window.innerHeight * 1.5, // 150vh equivalent
-    behavior: 'smooth'
+        top: window.innerHeight * 1.5, // 150vh 
+        behavior: 'smooth'
     });
 });
 

@@ -1,33 +1,69 @@
 #customization {
     background: linear-gradient(to bottom, white, #F092DD);
     width: 100%;
-    height: 500vh; /* this makes the actual div 5 times the height of the screen so as to allow scrolling */
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.customization-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.customization-row:first-child {
+    justify-content: space-around;
+}
+
+.customization-row .customization-buttons img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.customization-row .customization-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.customization-large-container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customization-large-container > div {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px; 
-    box-sizing: border-box; 
 }
 
-#image-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+.customization-large-container > div img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
+.customization-large-container > div:first-child img,
+.customization-large-container > div:last-child img {
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
 
-.customization-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    object-fit: cover; 
+.customization-row:last-child img {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
 }
