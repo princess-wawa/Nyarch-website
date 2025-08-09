@@ -7,13 +7,13 @@
 }
 
 .blue-highlight.in-view {
-    background: linear-gradient(90deg, #46c5f2 110%, transparent 0) left/0% 100% no-repeat;
+    background: linear-gradient(90deg, #46c5f2 110%, transparent 0) left/0 100% no-repeat;
     animation: highlight-animate 1s forwards;
 }
 
 @keyframes highlight-animate {
     from {
-        background-size: 0% 100%;
+        background-size: 0 100%;
     }
     to {
         background-size: 100% 100%;
