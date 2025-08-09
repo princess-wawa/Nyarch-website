@@ -1,0 +1,29 @@
+.blue-highlight {
+    padding: 0 10px 0 10px;
+    position: relative;
+    font-weight: bold;
+    transition: background 0.4s;
+    background: none;
+    color: #000000;
+}
+
+.blue-highlight.in-view {
+    background: linear-gradient(90deg, #46c5f2 110%, transparent 0) left/0% 100% no-repeat;
+    animation: highlight-animate 1s forwards;
+}
+
+@keyframes highlight-animate {
+    from {
+        background-size: 0% 100%;
+    }
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+.category-title {
+    font-family: "Catamaran","Helvetica","Arial","sans-serif";
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+}

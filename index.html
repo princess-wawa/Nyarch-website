@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/transition.css">
     <link rel="stylesheet" href="css/customization.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/installation.css">
+    <link rel="stylesheet" href="css/applications.css">
     <link rel="icon" href="images/logos/nyarch.svg">
     <title>nyarch linux - Home</title>
 </head>
@@ -112,78 +115,142 @@
     </div>
     <div style="height:70px;"></div>
 
-
-
-
-        <div id="landing">
-            <div class="grid-background">
-                <div class="glow-points"></div>
-            </div>
-            <div class="landing-content">
-                <div class="text-container">
-                    <div class="welcome-text">Welcome to</div>
-                    <div class="nyarch-text">Nyarch <span>Linux</span></div>
-                </div>
-                <img src="images/other/release.png" alt="Release Image">
-                <div class="version-text">Version 24.04</div>
-            </div>
-            <div class="transition">
-                <div class="wave wave1"></div>
-                <div class="wave wave2"></div>
-                <div class="wave wave3"></div>
-                <div class="wave wave4"></div>
-            </div> 
+    <div id="landing">
+        <div class="grid-background">
+            <div class="glow-points"></div>
         </div>
+        <div class="landing-content">
+            <div class="text-container">
+                <div class="welcome-text">Welcome to</div>
+                <div class="nyarch-text">Nyarch <span>Linux</span></div>
+            </div>
+            <img src="images/other/release.png" alt="Release Image">
+            <div class="version-text">Version 24.04</div>
+        </div>
+        <div class="transition">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div> 
+    </div>
         
-       
-        <div id="customization">
-            <!-- First Row -->
-            <div class="customization-row customization-buttons">
-                <img src="https://via.placeholder.com/50" alt="Button 1">
-                <img src="https://via.placeholder.com/50" alt="Button 2">
-                <img src="https://via.placeholder.com/50" alt="Button 3">
+    <div id="installation">
+        <a class="category-title"><span class="blue-highlight">Nyarch</span> is easy to install</a>
+        <div class="installation-gallery-container">
+            <button class="installation-btn installation-left-btn" aria-label="Scroll left">&#8592;</button>
+            <div class="installation-gallery">
+
+            <img src="images/install/step6.png" alt="Step 6" class="installation-img prev-prev">
+            <img src="images/install/step7.png" alt="Step 7" class="installation-img prev">
+            <img src="images/install/step1.png" alt="Step 1" class="installation-img current">
+            <img src="images/install/step2.png" alt="Step 2" class="installation-img next">
+            <img src="images/install/step3.png" alt="Step 3" class="installation-img next-next">
+            <img src="images/install/step4.png" alt="Step 4" class="installation-img">
+            <img src="images/install/step5.png" alt="Step 5" class="installation-img">
+   
             </div>
-    
-            <!-- Second Row -->
-            <div class="customization-row customization-text">This is some centered text</div>
-    
-            <!-- Third Row -->
-            <div class="customization-large-container">
-                <!-- Left Div -->
-                <div>
-                    <img src="images/customize/Gnome/bottom_panel.svg" alt="Bottom panel">
-                    <img src="images/customize/Gnome/gnome-layout.svg" alt="Gnome layout">
-                    <img src="images/customize/Gnome/top_bar_dock.svg" alt="top bar + dock">
-                    <img src="images/customize/Gnome/top_bar_left_dock.svg" alt="top bar + left dock">
-                    <img src="images/customize/Gnome/top_bar_menu_dock.svg" alt="top bar menu + dock">
-                    <img src="images/customize/Gnome/top_bar_with_menu.svg" alt="top bar with menu">
-                </div>
-    
-                <!-- Center Div -->
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-                </div>
-    
-                <!-- Right Div -->
-                <div>
-                    <img src="https://via.placeholder.com/50" alt="Button X">
-                    <img src="https://via.placeholder.com/50" alt="Button Y">
-                    <img src="https://via.placeholder.com/50" alt="Button Z">
+            <button class="installation-btn installation-right-btn" aria-label="Scroll right">&#8594;</button>
+        </div>
+    </div>
+
+    <div id="applications">
+        <a class="category-title">Enhance your <span class="blue-highlight">Weebflow</span> with our pre-installed applications</a>
+        <div class="pre-installed-apps-icon">
+            <img src="images/apps/icons/nyaofetch.png" alt="nyaofetch" class="app-icon" data-app="1">
+            <img src="images/apps/icons/catgirl.png" alt="catgirl" class="app-icon" data-app="2">
+            <img src="images/apps/icons/waifu.png" alt="waifu" class="app-icon" data-app="3">
+            <img src="images/apps/icons/nyarch-assistant.png" alt="nyarch-assistant" class="app-icon" data-app="4">
+            <img src="images/apps/icons/updater.png" alt="updater" class="app-icon" data-app="5">
+            <img src="images/apps/icons/scripts.png" alt="scripts" class="app-icon" data-app="6">
+            <img src="images/apps/icons/customize.png" alt="customize" class="app-icon" data-app="7">
+        </div>
+        <div class="app-details-container">
+            <div class="app-details" id="app-details-1">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/nyaofetch.png" alt="nyaofetch">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">NyaoFetch</div>
+                        <div class="app-description">A cute and customizable system information tool. <br> so you can finally tell people you use nyarch btw</div>
+                    </div>
                 </div>
             </div>
-    
-            <!-- Fourth Row -->
-            <div class="customization-row customization-text">This is some more centered text</div>
-    
-            <!-- Fifth Row -->
-            <div class="customization-row">
-                <img src="https://via.placeholder.com/100x50" alt="Download Button">
+            <div class="app-details" id="app-details-2" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/catgirl.png" alt="App 2">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">catgirl downloader</div>
+                        <div class="app-description">This application satisfies one of the most important need that a weeb has: getting some random pictures of cute catgirls whenever you want.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-details" id="app-details-3" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/waifu.png" alt="App 3">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">Waifu downloader</div>
+                        <div class="app-description">This application satisfies one of the most important need that a weeb has: getting some random pictures of cute waifus whenever you want.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-details" id="app-details-4" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/nyarch-assistant.png" alt="App 4">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">Nyarch Assistant</div>
+                        <div class="app-description">Your dream waifu at your command! Nyarch Assistant is more than just a digital assistant. She's your cute, quirky companion, ready to help with anything from system tasks to fun roleplays. It is possible to run everything locally and privacy friendly.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-details" id="app-details-5" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/updater.png" alt="App 5">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">Nyarch updater</div>
+                        <div class="app-description">Keep your Nyarch applications up to date with the latest features and improvements.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-details" id="app-details-6" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/scripts.png" alt="App 6">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">Nyarch scripts</div>
+                        <div class="app-description">A collection of scripts to enhance your Nyarch experience, including system tweaks and customizations.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-details" id="app-details-7" style="display:none;">
+                <div class="app-details-flex">
+                    <div class="app-details-left">
+                        <img src="images/apps/screenshots/customize.png" alt="App 7">
+                    </div>
+                    <div class="app-details-right">
+                        <div class="app-title">Nyarch Customize</div>
+                        <div class="app-description">A tool to customize your Nyarch experience, allowing you to change themes, icons, and more.</div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-    
+    </div>
+
+
         <script src="js/header.js"></script>
         <script src="js/landing.js"></script>
-        <script src="js/customization.js"></script>
+        <script src="js/installation.js"></script>
+        <script src="js/general.js"></script>
+        <script src="js/applications.js"></script>
     </body>
     </html>

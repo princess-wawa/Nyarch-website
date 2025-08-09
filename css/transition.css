@@ -1,6 +1,6 @@
 .transition {
     position: relative;
-    top: calc(120vh - 100px);
+    top: calc(100vh - 100px);
     width: 100%;
     height: 100px;
     background: #00000000;

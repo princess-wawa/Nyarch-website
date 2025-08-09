@@ -9,11 +9,11 @@ html{
 /* Header Styles */
 header {
     position: fixed;
-    width: 100vw;
+    width: 76vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 12%; 
+    padding: 20px 12% 20px 12%; 
     background-color: #00000000;
     color: #fff;
     font-family: "JetBrains Mono ExtraBold", monospace;
@@ -24,7 +24,7 @@ header {
 .links {
     display: flex;
     align-items: center; /* Center align items vertically */
-    width: 70%; /* Take up 70% of the header width */
+    width: 100%;
 }
 
 .link {
@@ -67,11 +67,7 @@ header {
     background-color: #F092DD; /* Pink background on hover */
 }
 
-/* Download Button */
-.download {
-    padding-right: 25%; /* Ensure 15% padding on the left side */
-    width: 30%; /* Take up 30% of the header width */
-}
+
 
 #download-btn {
     font-family: "JetBrains Mono ExtraBold", monospace;
@@ -106,11 +102,12 @@ header {
     width: 190px;
 }
 .locations{
-    top: calc(100% + 110px) !important;
-    right: 208px;
+    top: calc(100% + 125px) !important;
+    right: calc(12vw + 202px);
 }
 .nvidia-options{
-    top : calc(100% + 175px) !important;
+    top: calc(100% + 170px) !important;
+    right: calc(12vw + 202px);
 }
 .dropdown-content{
     top: calc(100% - 10px);
@@ -182,6 +179,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 50px;
     }
     .nyarch-button{
         top:-20px;
