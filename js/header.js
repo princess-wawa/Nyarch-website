@@ -78,13 +78,13 @@ window.onload = function() {
 // Select the button
 const downloadBtn = document.getElementById('download-btn');
 
-// Add click event listener
-downloadBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: window.innerHeight * 1.5, // 150vh 
-        behavior: 'smooth'
-    });
-});
+// scroll to the download section when the button is clicked
+//downloadBtn.addEventListener('click', () => {
+//    window.scrollTo({
+//        top: window.innerHeight * 1.5, // 150vh 
+//        behavior: 'smooth'
+//    });
+//});
 
 
 
