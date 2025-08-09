@@ -21,11 +21,12 @@
 }
 
 .category-title {
-    font-family: "Catamaran","Helvetica","Arial","sans-serif";
+    font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 500;
     font-size: 3vw;
     text-align: center;
 }
+
 .white {
     color: white;
 }

@@ -4,10 +4,12 @@ body {
     padding: 0;
 
 }
-html{
+
+html {
     background-color: black;
     scroll-behavior: smooth;
 }
+
 /* Header Styles */
 nav {
     position: relative;
@@ -15,7 +17,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 12% 20px 12%; 
+    padding: 20px 12% 20px 12%;
     background-color: #00000000;
     color: #fff;
     font-family: "JetBrains Mono ExtraBold", monospace;
@@ -30,7 +32,7 @@ nav {
 }
 
 .link {
-    position: relative; 
+    position: relative;
     z-index: 150;
     padding-left: 5px;
 }
@@ -46,7 +48,7 @@ nav {
     height: 40px;
     margin-right: 10px;
     z-index: 150;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .link img:hover {
@@ -70,7 +72,6 @@ nav {
 }
 
 
-
 #download-btn {
     font-family: "JetBrains Mono ExtraBold", monospace;
     background-color: #fff;
@@ -84,34 +85,40 @@ nav {
     z-index: 150;
     border-radius: 10px;
 }
-#download-btn img{
+
+#download-btn img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
     z-index: 150
 }
+
 #download-btn .arrow {
     margin-left: 15px;
     transition: transform 0.3s;
 }
 
-#download-btn{
+#download-btn {
     width: 200px;
-} 
-.dropdown-content, 
+}
+
+.dropdown-content,
 .location,
-.nvidia-options{
+.nvidia-options {
     width: 190px;
 }
-.locations{
+
+.locations {
     top: calc(100% + 125px) !important;
     right: calc(12vw + 202px);
 }
-.nvidia-options{
+
+.nvidia-options {
     top: calc(100% + 170px) !important;
     right: calc(12vw + 202px);
 }
-.dropdown-content{
+
+.dropdown-content {
     top: calc(100% - 10px);
 }
 
@@ -127,7 +134,7 @@ nav {
 
 .download .dropdown-content,
 .download .locations,
-.download .nvidia-options{
+.download .nvidia-options {
     position: absolute;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -137,32 +144,33 @@ nav {
     transition: opacity 0.3s, visibility 0.3s;
     white-space: nowrap; /* Prevents text from wrapping */
     z-index: 160;
-    padding:0px 4px 4px 4px;
+    padding: 0 4px 4px 4px;
 }
 
 .download:hover .dropdown-content,
-.download .dropdown-content:hover{
+.download .dropdown-content:hover {
     opacity: 1;
     visibility: visible;
 }
-.download-option{
+
+.download-option {
     border-radius: 10px !important;
     padding-top: 4px;
 }
-.download-option a{
+
+.download-option a {
     display: block;
-    padding-top: 5px;
     padding: 10px;
     border-radius: 10px !important;
     color: #333;
     text-decoration: none;
     transition: background-color 0.3s;
-    text-align: left; 
-    text-overflow: ellipsis; 
+    text-align: left;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.download-option img{
+.download-option img {
     width: 20px;
     height: 20px;
     margin-bottom: -4px;
@@ -170,7 +178,7 @@ nav {
     z-index: 150
 }
 
-.download-option a:hover{
+.download-option a:hover {
     background-color: #bebebe;
 }
 
@@ -183,24 +191,27 @@ nav {
         align-items: center;
         height: auto;
     }
-    .nyarch-button{
-        top:-20px;
+
+    .nyarch-button {
+        top: -20px;
     }
-    .links{
+
+    .links {
         position: absolute;
-        top:52px;
+        top: 52px;
         width: unset;
     }
-    .download{
+
+    .download {
         position: absolute;
         top: 95px;
         width: auto;
         visibility: visible;
-        padding:0px 4px 4px 4px;
+        padding: 0 4px 4px 4px;
     }
-    
+
 }
 
-.space{
+.space {
     display: inline-block;
 }
