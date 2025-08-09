@@ -48,8 +48,8 @@
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 40vw;
+    height: calc(40vw - 7%);
 }
 .app-details-left {
     align-items: flex-end;
