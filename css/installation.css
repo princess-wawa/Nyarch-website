@@ -92,7 +92,8 @@
     border: none;
     color: #fff;
     font-size: 2.5rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+    line-height: 1;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
