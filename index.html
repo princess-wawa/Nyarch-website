@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/transition.css">
-    <link rel="stylesheet" href="css/customization.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/installation.css">
     <link rel="stylesheet" href="css/applications.css">
+    <link rel="stylesheet" href="css/customization.css">
     <link rel="icon" href="images/logos/nyarch.svg">
     <title>nyarch linux - Home</title>
 </head>
@@ -246,6 +246,56 @@
         </div>
     </div>
 
+    <div id="customization">
+        <a class="category-title white">Enjoy <span class="blue-highlight">Nyarch</span>'s customizability</a>
+        <div class="theme-color-picker">
+            <div class="theme-color-circle" style="background:#643f00;" onclick="ChangeThemeColor('#643f00')"></div>
+            <div class="theme-color-circle" style="background:#005142;" onclick="ChangeThemeColor('#005142')"></div>
+            <div class="theme-color-circle" style="background:#722b65;" onclick="ChangeThemeColor('#722b65')"></div>
+            <div class="theme-color-circle" style="background:#00497e;" onclick="ChangeThemeColor('#00497e')"></div>
+            <div class="theme-color-circle" style="background:#225104;" onclick="ChangeThemeColor('#225104')"></div>
+            <div class="theme-color-circle" style="background:#004397;" onclick="ChangeThemeColor('#004397')"></div>
+            <div class="theme-color-circle" style="background:#7c2c1b;" onclick="ChangeThemeColor('#7c2c1b')"></div>
+            <div class="theme-color-circle" style="background:#00504e;" onclick="ChangeThemeColor('#00504e')"></div>
+            <div class="theme-color-circle" style="background:#403c8e;" onclick="ChangeThemeColor('#403c8e')"></div>
+            <div class="theme-color-circle" style="background:#3d4c00;" onclick="ChangeThemeColor('#3d4c00')"></div>
+            <div class="theme-color-circle" style="background:#64307c;" onclick="ChangeThemeColor('#64307c')"></div>
+            <div class="theme-color-circle" style="background:#005137;" onclick="ChangeThemeColor('#005137')"></div>
+            <div class="theme-color-circle" style="background:#4e4800;" onclick="ChangeThemeColor('#4e4800')"></div>
+        </div>
+        <div class="customization-flex-container">
+            <div class="customization-flex-item theme-settings">
+                <a class="customization-setting">taskbar</a>
+                <div class="customization-options">
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('none')">None</button>
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('dock')">Dock</button>
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('panel')">Panel</button>
+                </div>
+                <a class="customization-setting">taskbar position</a>
+                <div class="customization-options">
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('left')">Left</button>
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('bottom')">Bottom</button>
+                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('right')">Right</button>
+                </div>
+                <a class="customization-setting">Top panel</a>
+                <div class="customization-options">
+                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleTopPanel('True')">Yes</button>
+                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleTopPanel('False')">No</button>
+                </div>
+                <a class="customization-setting">Arc menu</a>
+                <div class="customization-options">
+                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleArcMenu('True')">Yes</button>
+                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleArcMenu('False')">No</button>
+                </div>
+            </div>
+            <div class="customization-flex-item theme-preview">
+            <h3>preview</h3>
+            <p>the preview of the themes aaaaaaaaaaaaaaaaa</p>
+            </div>
+        </div>
+
+
+    </div>
 
         <script src="js/header.js"></script>
         <script src="js/landing.js"></script>

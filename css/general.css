@@ -4,7 +4,6 @@
     font-weight: bold;
     transition: background 0.4s;
     background: none;
-    color: #000000;
 }
 
 .blue-highlight.in-view {
@@ -26,4 +25,7 @@
     font-weight: 500;
     font-size: 3vw;
     text-align: center;
+}
+.white {
+    color: white;
 }
