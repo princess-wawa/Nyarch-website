@@ -1,20 +1,19 @@
 .transition {
     position: relative;
-    top: calc(100vh - 100px);
+    bottom: -8vh;
     width: 100%;
     height: 100px;
     background: #00000000;
-    overflow: hidden;
 }
 
 .transition .wave {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background: url(../images/other/wave.png);
-    background-size: 100vw 100px;
+    background-size: 100% 100px;
     z-index: -3;
     transform: scaleY(-1);
 }

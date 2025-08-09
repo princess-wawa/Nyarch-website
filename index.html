@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/landing.css">
-    <link rel="stylesheet" href="css/transition.css">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Nyarch Linux - Home</title>
     <link rel="stylesheet" href="css/installation.css">
-    <link rel="stylesheet" href="css/applications.css">
-    <link rel="stylesheet" href="css/customization.css">
-    <link rel="icon" href="images/logos/nyarch.svg">
-    <title>nyarch linux - Home</title>
 </head>
 <body>
-    <div>
-        <header id="header">
+    <header>
+        <nav class="navbar">
             <div class="link nyarch-button">
                 <a href="https://nyarchlinux.moe/">
                     <img src="images/logos/nyarch.svg" alt="Nyarch">
@@ -111,19 +105,18 @@
                     </div> 
                 </div>
             </div>
-        </header>
-    </div>
-    <div style="height:70px;"></div>
+        </nav>
+    </header>
 
-    <div id="landing">
+    <main id="landing">
         <div class="grid-background">
             <div class="glow-points"></div>
         </div>
         <div class="landing-content">
-            <div class="text-container">
-                <div class="welcome-text">Welcome to</div>
-                <div class="nyarch-text">Nyarch <span>Linux</span></div>
-            </div>
+            <h1 class="text-container">
+                <span class="welcome-text">Welcome to</span>
+                <span class="nyarch-text">Nyarch <span>Linux</span></span>
+            </h1>
             <img src="images/other/release.png" alt="Release Image">
             <div class="version-text">Version 24.04</div>
         </div>
@@ -133,9 +126,9 @@
             <div class="wave wave3"></div>
             <div class="wave wave4"></div>
         </div> 
-    </div>
+    </main>
         
-    <div id="installation">
+    <section id="installation">
         <a class="category-title"><span class="blue-highlight">Nyarch</span> is easy to install</a>
         <div class="installation-gallery-container">
             <button class="installation-btn installation-left-btn" aria-label="Scroll left">&#8592;</button>
@@ -152,9 +145,9 @@
             </div>
             <button class="installation-btn installation-right-btn" aria-label="Scroll right">&#8594;</button>
         </div>
-    </div>
+    </section>
 
-    <div id="applications">
+    <section id="applications">
         <a class="category-title">Enhance your <span class="blue-highlight">Weebflow</span> with our pre-installed applications</a>
         <div class="pre-installed-apps-icon">
             <img src="images/apps/icons/nyaofetch.png" alt="nyaofetch" class="app-icon" data-app="1">
@@ -244,9 +237,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="customization">
+    <section id="customization">
         <a class="category-title white">Enjoy <span class="blue-highlight">Nyarch</span>'s customizability</a>
         <div class="theme-color-picker">
             <div class="theme-color-circle" style="background:#643f00;" onclick="ChangeThemeColor('#643f00')"></div>
@@ -295,12 +288,12 @@
         </div>
 
 
-    </div>
+    </section>
 
-        <script src="js/header.js"></script>
-        <script src="js/landing.js"></script>
-        <script src="js/installation.js"></script>
-        <script src="js/general.js"></script>
-        <script src="js/applications.js"></script>
-    </body>
-    </html>
+    <script src="js/landing.js"></script>
+    <script src="js/installation.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/applications.js"></script>
+</body>
+</html>
