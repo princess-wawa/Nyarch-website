@@ -55,6 +55,7 @@
     overflow: hidden; /* Hide overflow to prevent scrolling */
     background: linear-gradient(to bottom, black, #00526f);
     z-index: -2;
+    top: 5vh;
 }
 
 .landing-content {
