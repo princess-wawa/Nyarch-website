@@ -1,6 +1,10 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 @import "reset.css";
+@import "variables.css";
 @import "typography.css";
 @import "header.css";
+@import "buttons.css";
 @import "landing.css";
 @import "transitions.css";
 @import "general.css";
