@@ -1,3 +1,14 @@
+function showDropdown(dropdown) {
+    dropdown.style.opacity = '1';
+    dropdown.style.visibility = 'visible';
+    return true;
+}
+
+function hideDropdown() {
+    dropdownContent.style.opacity = '0';
+    dropdownContent.style.visibility = 'hidden';
+    return false;
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const serverBtn = document.querySelector('.our-servers');
@@ -5,26 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let isHovered = false;
 
-    function showDropdown() {
-        dropdownContent.style.opacity = '1';
-        dropdownContent.style.visibility = 'visible';
-        isHovered = true;
-    }
-
-    function hideDropdown() {
-        dropdownContent.style.opacity = '0';
-        dropdownContent.style.visibility = 'hidden';
-        isHovered = false;
-    }
-
     function handleHover(event) {
         const isHoveringOverButton = serverBtn.contains(event.target);
         const isHoveringOverDropdown = dropdownContent.contains(event.target);
 
         if (isHoveringOverButton || isHoveringOverDropdown) {
-            if (!isHovered) showDropdown();
+            if (!isHovered) isHovered = showDropdown(dropdownContent);
         } else {
-            if (isHovered) hideDropdown();
+            if (isHovered) isHovered = hideDropdown(dropdownContent);
         }
     }
 
@@ -40,26 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let isHovered = false;
 
-    function showDropdown() {
-        dropdownContent.style.opacity = '1';
-        dropdownContent.style.visibility = 'visible';
-        isHovered = true;
-    }
-
-    function hideDropdown() {
-        dropdownContent.style.opacity = '0';
-        dropdownContent.style.visibility = 'hidden';
-        isHovered = false;
-    }
-
     function handleHover(event) {
         const isHoveringOverButton = nvidiaBtn.contains(event.target);
         const isHoveringOverDropdown = dropdownContent.contains(event.target);
 
         if (isHoveringOverButton || isHoveringOverDropdown) {
-            if (!isHovered) showDropdown();
+            if (!isHovered) isHovered = showDropdown(dropdownContent);
         } else {
-            if (isHovered) hideDropdown();
+            if (isHovered) isHovered = hideDropdown(dropdownContent);
         }
     }
 
