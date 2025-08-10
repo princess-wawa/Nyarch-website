@@ -1,0 +1,5 @@
+TODO:
+Refactor CSS usages: add a main.css file to import other files and only import the main in the css,
+Add css reset and make it fit the current designs,
+Use HTML5 anchors instead of divs,
+Fix diverse design issues

@@ -69,14 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* go to the top of the screen */
-window.onload = function() {
-    window.scrollTo(0, 0);
-};
+///window.onload = function() {
+//    window.scrollTo(0, 0);
+///};
 
 
 
 // Select the button
-const downloadBtn = document.getElementById('download-btn');
+// const downloadBtn = document.getElementById('download-btn');
 
 // scroll to the download section when the button is clicked
 //downloadBtn.addEventListener('click', () => {
