@@ -1,0 +1,35 @@
+.btn {
+    --btn-color: var(--blue);
+    --btn-bg: var(--white);
+    --btn-hover-bg: var(--darker-white);
+    --btn-hover-color: var(--blue);
+
+    font-family: "JetBrains Mono ExtraBold", monospace;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: none;
+    gap: .65rem;
+    padding: .65rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    border-radius: .5rem;
+    transform: translateY(0);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-color);
+}
+
+.btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(2px);
+}
+
+.btn i {
+    color: var(--black);
+}
