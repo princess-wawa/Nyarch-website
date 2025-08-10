@@ -4,9 +4,9 @@ function showDropdown(dropdown) {
     return true;
 }
 
-function hideDropdown() {
-    dropdownContent.style.opacity = '0';
-    dropdownContent.style.visibility = 'hidden';
+function hideDropdown(dropdown) {
+    dropdown.style.opacity = '0';
+    dropdown.style.visibility = 'hidden';
     return false;
 }
 
