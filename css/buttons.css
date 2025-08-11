@@ -33,3 +33,15 @@
 .btn i {
     color: var(--black);
 }
+
+.btn-dynamic {
+    --btn-color: var(--btn-dynamic-color, var(--blue));
+    --btn-bg: var(--btn-dynamic-bg, var(--white));
+    --btn-hover-bg: var(--btn-dynamic-hover-bg, var(--darker-white));
+    --btn-hover-color: var(--btn-dynamic-hover-color, var(--blue));
+}
+
+.grow {
+    width: auto;
+    flex-grow: 1;
+}

@@ -11,10 +11,26 @@
 }
 
 .theme-color-circle {
+    --circle-color: var(--blue);
+
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
     cursor: pointer;
+    background: var(--circle-color);
+    transform: scale(1);
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.theme-color-circle:hover {
+    transform: scale(1.05);
+}
+
+.theme-color-circle.active {
+    outline: 2px solid var(--circle-color);
+    outline-offset: .25rem;
+    transform: scale(1.1);
 }
 
 .theme-color-picker {
@@ -76,25 +92,8 @@
     text-align: center;
 }
 
-.customization-btn {
-    color: var(--white);
-    font-size: 1vw;
-    background-color: #312429;
-    flex: 1;;
-    border-radius: 12px;
-    box-sizing: border-box;
-    border: none;
-    height: 3vw;
-}
-
-.customization-btn:hover {
-    background-color: #352d2f;
-}
-
-.customization-btn-2 {
-    width: 45%;
-}
-
-.customization-btn-3 {
-    width: 30%;
+.customization-options {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
 }
