@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .75rem;
+    width: 100%;
+    padding: 20px 12%;
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+footer a {
+    color: var(--pink);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--pink-dark);
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    font-family: "JetBrains Mono ExtraBold", monospace;
+}
+
+.footer-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

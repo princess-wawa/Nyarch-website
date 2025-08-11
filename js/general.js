@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.blue-highlight');
+    const elements = document.querySelectorAll('.highlight');
     const triggerPoint = window.innerHeight * 0.8;
 
     elements.forEach(el => {

@@ -55,26 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('mouseout', handleHover);
 });
 
-/* go to the top of the screen */
-///window.onload = function() {
-//    window.scrollTo(0, 0);
-///};
-
-
-
-// Select the button
-// const downloadBtn = document.getElementById('download-btn');
-
-// scroll to the download section when the button is clicked
-//downloadBtn.addEventListener('click', () => {
-//    window.scrollTo({
-//        top: window.innerHeight * 1.5, // 150vh 
-//        behavior: 'smooth'
-//    });
-//});
-
-
-
 const header = document.getElementById('header');
 
 // Add an event listener for the scroll event

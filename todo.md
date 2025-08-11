@@ -1,9 +1,9 @@
 # TODO:
-- [ ] Refactor CSS usages: add a main.css file to import other files and only import the main in the css
-- [ ] Add css reset and make it fit the current designs
-- [ ] Use HTML5 anchors instead of divs
-- [ ] Fix diverse design issues
+- [x] Refactor CSS usages: add a main.css file to import other files and only import the main in the css
+- [x] Add css reset and make it fit the current designs
+- [x] Use HTML5 anchors instead of divs
+- [x] Fix diverse design issues
 - [ ] Add the technical features and the system requirements sections
 - [ ] Add the download section
 - [ ] Add the FAQ section
-- [ ] Add a proper footer
+- [x] Add a proper footer

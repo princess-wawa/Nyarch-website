@@ -5,6 +5,24 @@
     --sightly-light-black: #222428;
     --light-black: #333;
     --pink: #F092DD;
+    --pink-dark: #d66bb2;
     --blue: #042f60;
     --dark-blue: #052447;
+    --sky-blue: #00aaff;
+    --gray: #b0b0b0;
+    --orange: #ff8c00;
+    --yellow: #ffcc00;
+
+    --discord-blue: #5865F2;
+    --dark-discord-blue: #404EED;
+    --telegram-blue: #1da1f2;
+    --dark-telegram-blue: #1a8cd8;
+    --mastodon-blue: #2208e4;
+    --dark-mastodon-blue: #1a06b8;
+    --reddit-orange: #ff4500;
+    --dark-reddit-orange: #e03e00;
+    --youtube-red: #ff0000;
+    --dark-youtube-red: #cc0000;
+    --instagram-pink: #c13584;
+    --dark-instagram-pink: #a32b6c;
 }
