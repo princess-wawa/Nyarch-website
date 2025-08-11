@@ -7,6 +7,7 @@
     <link rel="icon" href="images/logos/nyarch.svg">
     <title>Nyarch Linux - Home</title>
     <link rel="stylesheet" href="css/installation.css">
+    <script src="js/tinycolor.js"></script>
 </head>
 <body>
     <header id="header">
@@ -223,43 +224,43 @@
     <section id="customization">
         <a class="category-title white">Enjoy <span class="blue-highlight">Nyarch</span>'s customizability</a>
         <div class="theme-color-picker">
-            <div class="theme-color-circle" style="background:#643f00;" onclick="ChangeThemeColor('#643f00')"></div>
-            <div class="theme-color-circle" style="background:#005142;" onclick="ChangeThemeColor('#005142')"></div>
-            <div class="theme-color-circle" style="background:#722b65;" onclick="ChangeThemeColor('#722b65')"></div>
-            <div class="theme-color-circle" style="background:#00497e;" onclick="ChangeThemeColor('#00497e')"></div>
-            <div class="theme-color-circle" style="background:#225104;" onclick="ChangeThemeColor('#225104')"></div>
-            <div class="theme-color-circle" style="background:#004397;" onclick="ChangeThemeColor('#004397')"></div>
-            <div class="theme-color-circle" style="background:#7c2c1b;" onclick="ChangeThemeColor('#7c2c1b')"></div>
-            <div class="theme-color-circle" style="background:#00504e;" onclick="ChangeThemeColor('#00504e')"></div>
-            <div class="theme-color-circle" style="background:#403c8e;" onclick="ChangeThemeColor('#403c8e')"></div>
-            <div class="theme-color-circle" style="background:#3d4c00;" onclick="ChangeThemeColor('#3d4c00')"></div>
-            <div class="theme-color-circle" style="background:#64307c;" onclick="ChangeThemeColor('#64307c')"></div>
-            <div class="theme-color-circle" style="background:#005137;" onclick="ChangeThemeColor('#005137')"></div>
-            <div class="theme-color-circle" style="background:#4e4800;" onclick="ChangeThemeColor('#4e4800')"></div>
+            <div class="theme-color-circle" style="--circle-color:#643f00;" onclick="ChangeThemeColor(this, '#643f00')"></div>
+            <div class="theme-color-circle" style="--circle-color:#005142;" onclick="ChangeThemeColor(this, '#005142')"></div>
+            <div class="theme-color-circle" style="--circle-color:#722b65;" onclick="ChangeThemeColor(this, '#722b65')"></div>
+            <div class="theme-color-circle" style="--circle-color:#00497e;" onclick="ChangeThemeColor(this, '#00497e')"></div>
+            <div class="theme-color-circle" style="--circle-color:#225104;" onclick="ChangeThemeColor(this, '#225104')"></div>
+            <div class="theme-color-circle" style="--circle-color:#004397;" onclick="ChangeThemeColor(this, '#004397')"></div>
+            <div class="theme-color-circle" style="--circle-color:#7c2c1b;" onclick="ChangeThemeColor(this, '#7c2c1b')"></div>
+            <div class="theme-color-circle" style="--circle-color:#00504e;" onclick="ChangeThemeColor(this, '#00504e')"></div>
+            <div class="theme-color-circle" style="--circle-color:#403c8e;" onclick="ChangeThemeColor(this, '#403c8e')"></div>
+            <div class="theme-color-circle" style="--circle-color:#3d4c00;" onclick="ChangeThemeColor(this, '#3d4c00')"></div>
+            <div class="theme-color-circle" style="--circle-color:#64307c;" onclick="ChangeThemeColor(this, '#64307c')"></div>
+            <div class="theme-color-circle" style="--circle-color:#005137;" onclick="ChangeThemeColor(this, '#005137')"></div>
+            <div class="theme-color-circle" style="--circle-color:#4e4800;" onclick="ChangeThemeColor(this, '#4e4800')"></div>
         </div>
         <div class="customization-flex-container">
             <div class="customization-flex-item theme-settings">
                 <h3 class="customization-setting">Taskbar</h3>
                 <div class="customization-options">
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('none')">None</button>
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('dock')">Dock</button>
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarStyle('panel')">Panel</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarStyle('none')">None</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarStyle('dock')">Dock</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarStyle('panel')">Panel</button>
                 </div>
                 <h3 class="customization-setting">Taskbar Position</h3>
                 <div class="customization-options">
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('left')">Left</button>
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('bottom')">Bottom</button>
-                    <button type="button" class="customization-btn customization-btn-3" onclick="ChangeTaskbarPosition('right')">Right</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarPosition('left')">Left</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarPosition('bottom')">Bottom</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarPosition('right')">Right</button>
                 </div>
                 <h3 class="customization-setting">Top Panel</h3>
                 <div class="customization-options">
-                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleTopPanel('True')">Yes</button>
-                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleTopPanel('False')">No</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ToggleTopPanel('True')">Yes</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ToggleTopPanel('False')">No</button>
                 </div>
                 <h3 class="customization-setting">Arc Menu</h3>
                 <div class="customization-options">
-                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleArcMenu('True')">Yes</button>
-                    <button type="button" class="customization-btn customization-btn-2" onclick="ToggleArcMenu('False')">No</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ToggleArcMenu('True')">Yes</button>
+                    <button type="button" class="btn btn-dynamic grow" onclick="ToggleArcMenu('False')">No</button>
                 </div>
             </div>
             <div class="customization-flex-item theme-preview">
@@ -275,5 +276,6 @@
     <script src="js/general.js"></script>
     <script src="js/header.js"></script>
     <script src="js/applications.js"></script>
+    <script src="js/customization.js"></script>
 </body>
 </html>
