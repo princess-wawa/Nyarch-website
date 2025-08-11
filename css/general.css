@@ -1,4 +1,6 @@
-.blue-highlight {
+.highlight {
+    --highlight-color: #46c5f2;
+
     padding: 0 10px 0 10px;
     position: relative;
     font-weight: bold;
@@ -6,9 +8,17 @@
     background: none;
 }
 
-.blue-highlight.in-view {
-    background: linear-gradient(90deg, #46c5f2 110%, transparent 0) left/0 100% no-repeat;
+.highlight.in-view {
+    background: linear-gradient(90deg, var(--highlight-color) 110%, transparent 0) left/0 100% no-repeat;
     animation: highlight-animate 1s forwards;
+}
+
+.highlight.pink {
+    --highlight-color: var(--pink);
+}
+
+.highlight.orange {
+    --highlight-color: var(--orange);
 }
 
 @keyframes highlight-animate {

@@ -1,0 +1,104 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 2rem;
+    background-color: var(--yellow);
+    min-height: 75vh;
+    color: var(--black);
+}
+
+#contact h2 {
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.social-link {
+    --social-bg: var(--black);
+    --social-hover-bg: var(--light-black);
+    --social-color: var(--white);
+    --social-hover-color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--social-bg);
+    color: var(--social-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--social-hover-bg);
+    transform: scale(1.1);
+    color: var(--social-hover-color);
+}
+
+.social-link.discord {
+    --social-bg: var(--discord-blue);
+    --social-hover-bg: var(--dark-discord-blue);
+}
+
+.social-link.reddit {
+    --social-bg: var(--reddit-orange);
+    --social-hover-bg: var(--dark-reddit-orange);
+}
+
+.social-link.instagram {
+    --social-bg: var(--instagram-pink);
+    --social-hover-bg: var(--dark-instagram-pink);
+}
+
+.social-link.mastodon {
+    --social-bg: var(--mastodon-blue);
+    --social-hover-bg: var(--dark-mastodon-blue);
+}
+
+.social-link.telegram {
+    --social-bg: var(--telegram-blue);
+    --social-hover-bg: var(--dark-telegram-blue);
+}
+
+.social-link.youtube {
+    --social-bg: var(--youtube-red);
+    --social-hover-bg: var(--dark-youtube-red);
+}
+
+@media screen and (max-width: 1024px) {
+    #contact h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact h2 {
+        font-size: 5vw;
+    }
+
+    .socials {
+        max-width: 80%;
+    }
+
+    .social-link {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
