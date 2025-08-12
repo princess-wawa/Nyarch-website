@@ -6,16 +6,24 @@ header {
 /* Header Styles */
 nav {
     position: relative;
-    width: 76vw;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    padding: 20px 12% 20px 12%;
+    padding: 2rem;
     background-color: #00000000;
     color: var(--white);
     font-family: "JetBrains Mono ExtraBold", monospace;
 }
 
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
 .links {
     display: flex;
@@ -23,12 +31,12 @@ nav {
     width: 100%;
     list-style: none;
     padding: 0;
+    gap: calc(2rem - 16px);
 }
 
 .link {
     position: relative;
     z-index: 150;
-    padding-left: 5px;
 }
 
 .link a {
@@ -40,7 +48,6 @@ nav {
 .link img {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
     z-index: 150;
     transition: transform 0.3s ease;
 }

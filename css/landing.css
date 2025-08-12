@@ -53,7 +53,7 @@
     height: 100dvh;
     background: linear-gradient(to bottom, black, #00526f);
     z-index: -2;
-    padding-top: 6rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
 }
