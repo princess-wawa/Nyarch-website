@@ -3,19 +3,31 @@ header {
     z-index: 100;
 }
 
+.navbar-collapse-button {
+    display: none; /* Hide the button by default */
+}
+
 /* Header Styles */
 nav {
     position: relative;
-    width: 76vw;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    padding: 20px 12% 20px 12%;
+    padding: 2rem;
     background-color: #00000000;
     color: var(--white);
     font-family: "JetBrains Mono ExtraBold", monospace;
 }
 
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
 .links {
     display: flex;
@@ -23,12 +35,12 @@ nav {
     width: 100%;
     list-style: none;
     padding: 0;
+    gap: calc(2rem - 16px);
 }
 
 .link {
     position: relative;
     z-index: 150;
-    padding-left: 5px;
 }
 
 .link a {
@@ -40,7 +52,6 @@ nav {
 .link img {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
     z-index: 150;
     transition: transform 0.3s ease;
 }
@@ -82,16 +93,6 @@ nav {
     width: 190px;
 }
 
-.locations {
-    top: calc(100% + 125px) !important;
-    right: calc(12vw + 202px);
-}
-
-.nvidia-options {
-    top: calc(100% + 170px) !important;
-    right: calc(12vw + 202px);
-}
-
 .dropdown-content {
     top: calc(100% - 10px);
 }
@@ -131,6 +132,10 @@ nav {
     visibility: visible;
 }
 
+.navbar-brand span {
+    display: none;
+}
+
 .download-option {
     display: flex;
     flex-direction: row;
@@ -165,30 +170,133 @@ nav {
 /*change the size of the texts for phone */
 @media only screen and (max-width: 1100px) {
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+        /*justify-content: space-between;*/
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
     }
 
-    .nyarch-button {
-        top: -20px;
+    .navbar-collapse-button {
+        display: flex; /* Show the button on smaller screens */
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 200; /* Ensure it is above other elements */
+    }
+
+    .navbar-collapse-button > div {
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+
+    .navbar-collapse-button > div span {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 4px;
+        background-color: var(--white);
+        border-radius: 2px;
+        transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+    }
+
+    .navbar-collapse-button > div span:nth-child(2) {
+        margin: 7px 0; /* Space between the lines */
+    }
+
+    .navbar-collapse-button.active > div span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px; /* Adjust position for better alignment */
+    }
+
+    .navbar-collapse-button.active > div span:nth-child(2) {
+        opacity: 0; /* Hide the middle line */
+        margin: 0;
+
+    }
+
+    .navbar-collapse-button.active > div span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 2px; /* Adjust position for better alignment */
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: calc(100% + 1rem);
+        left: -1rem;
+        top: 0;
+        height: 100dvh;
+        display: flex; /* Hide by default */
+        transform: translateX(-100%); /* Hide off-screen */
+        background-color: var(--black);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-collapse-button.active + .navbar-collapse {
+        transform: translateX(0); /* Show when active */
+    }
+
+    .navbar-brand span {
+        display: block; /* Show the brand name on smaller screens */
+        font-size: 1.25rem; /* Adjust font size for better visibility */
+    }
+
+    .navbar-brand a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .navbar-collapse-button:hover > div span {
+        background-color: var(--pink);
     }
 
     .links {
-        position: absolute;
-        top: 52px;
-        width: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-content {
+        top: 1rem;
+    }
+
+    .download .dropdown-content {
+        position: relative;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        width: 100%
+    }
+
+    .download:hover .dropdown-content,
+    .download .dropdown-content:hover {
+        max-height: 18rem; /* Adjust as needed */
     }
 
     .download {
-        position: absolute;
-        top: 95px;
-        width: auto;
-        visibility: visible;
-        padding: 0 4px 4px 4px;
+        position: relative;
     }
 
+    .locations, .nvidia-options {
+        bottom: 0 !important;
+        right: 0;
+    }
 }
 
 .space {

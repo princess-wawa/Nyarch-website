@@ -10,12 +10,6 @@
     color: var(--black);
 }
 
-#contact h2 {
-    font-weight: 500;
-    font-size: 3vw;
-    text-align: center;
-}
-
 .socials {
     display: flex;
     gap: 1rem;

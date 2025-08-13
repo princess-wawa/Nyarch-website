@@ -17,8 +17,7 @@
 }
 
 .app-icon {
-    width: 5vw;
-    height: 5vw;
+    width: clamp(2rem, -2.75rem + 17vw, 4.5rem);
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -97,5 +96,17 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app-details-flex {
+        flex-wrap: wrap;
+    }
+
+    .app-details-left, .app-details-right {
+        width: auto;
+        flex: unset;
+        margin: 0;
     }
 }

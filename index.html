@@ -12,83 +12,96 @@
 <body>
     <header id="header">
         <nav class="navbar">
-            <div class="link nyarch-button">
+            <div class="link nyarch-button navbar-brand">
                 <a href="https://nyarchlinux.moe/">
                     <img src="images/logos/nyarch.svg" alt="Nyarch">
+                    <span>Nyarch Linux</span>
                 </a>
             </div>
-            <ul class="links">
-                <li class="link rounded">
-                    <a href="https://discord.gg/xuw6BNXXE7">Discord</a>
-                </li>
-                <li class="link rounded">
-                    <a href="https://github.com/NyarchLinux">GitHub</a>
-                </li>
-                <li class="link rounded">
-                    <a href="https://t.me/nyarchlinux">Telegram</a>
-                </li>
-            </ul>
-            <ul class="download">
-                <li class="btn btn-light" id="download-btn">
-                    <i class="nf nf-oct-download"></i>
-                    Download Nyarch
-                    <i class="nf nf-seti-play_arrow arrow"></i>
-                </li>
-                <li class="dropdown-content">
-                    <a class="download-option" target="_blank" href="https://nyarchlinux.moe/sums.html">
-                        <span>🔒</span>
-                        Sha256 sums
-                    </a>
-                    <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
-                        <img src="images/logos/telegram.svg" alt="telegram">
-                        Telegram
-                    </a>
-                    <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
-                        <img src="images/logos/forge.svg" alt="forge">
-                        Source Forge
-                    </a>
-                    <a class="download-option" target="_blank" href="https://github.com/NyarchLinux/NyarchLinux">
-                        <img src="images/logos/github.svg" alt="github">
-                        Source code
-                    </a>
-                    <button class="download-option our-servers">
-                        <img src="images/logos/nyarch.svg" alt="Nyarch">
-                        Our servers
-                    </button>
-                    <button class="download-option nvidia-version">
-                        <img src="images/logos/Nvidia.svg" alt="Nvidia">
-                        Nvidia version
-                    </button>
-                </li>
-                <li class="locations">
-                    <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                        <span>🇩🇪</span>
-                        Germany
-                    </a>
-                    <a class="download-option" target="_blank" href="https://sgmirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                        <span>🇸🇬</span>
-                        Singapore
-                    </a>
-                    <a class="download-option" target="_blank" href="https://nymirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                        <span>🇺🇸</span>
-                        New york
-                    </a>
-                </li>
-                <li class="nvidia-options">
-                    <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
-                        <img src="images/logos/telegram.svg" alt="telegram">
-                        Telegram
-                    </a>
-                    <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
-                        <img src="images/logos/forge.svg" alt="forge">
-                        Source forge
-                    </a>
-                    <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Nyaovidea_Gnome_24.11.1.iso">
-                        <span>🇩🇪</span>
-                        German server
-                    </a>
-                </li>
-            </ul>
+            <div class="navbar-collapse-button">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="links">
+                    <li class="link rounded">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="link rounded">
+                        <a href="#features">Features</a>
+                    </li>
+                    <li class="link rounded">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="link rounded">
+                        <a href="https://wiki.nyarchlinux.moe">Wiki</a>
+                    </li>
+                </ul>
+                <ul class="download">
+                    <li class="btn btn-light" id="download-btn">
+                        <i class="nf nf-oct-download"></i>
+                        Download Nyarch
+                        <i class="nf nf-seti-play_arrow arrow"></i>
+                    </li>
+                    <li class="dropdown-content">
+                        <a class="download-option" target="_blank" href="https://nyarchlinux.moe/sums.html">
+                            <span>🔒</span>
+                            Sha256 sums
+                        </a>
+                        <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
+                            <img src="images/logos/telegram.svg" alt="telegram">
+                            Telegram
+                        </a>
+                        <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
+                            <img src="images/logos/forge.svg" alt="forge">
+                            Source Forge
+                        </a>
+                        <a class="download-option" target="_blank" href="https://github.com/NyarchLinux/NyarchLinux">
+                            <img src="images/logos/github.svg" alt="github">
+                            Source code
+                        </a>
+                        <button class="download-option our-servers">
+                            <img src="images/logos/nyarch.svg" alt="Nyarch">
+                            Our servers
+                        </button>
+                        <button class="download-option nvidia-version">
+                            <img src="images/logos/Nvidia.svg" alt="Nvidia">
+                            Nvidia version
+                        </button>
+                    </li>
+                    <li class="locations">
+                        <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                            <span>🇩🇪</span>
+                            Germany
+                        </a>
+                        <a class="download-option" target="_blank" href="https://sgmirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                            <span>🇸🇬</span>
+                            Singapore
+                        </a>
+                        <a class="download-option" target="_blank" href="https://nymirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                            <span>🇺🇸</span>
+                            New york
+                        </a>
+                    </li>
+                    <li class="nvidia-options">
+                        <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
+                            <img src="images/logos/telegram.svg" alt="telegram">
+                            Telegram
+                        </a>
+                        <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
+                            <img src="images/logos/forge.svg" alt="forge">
+                            Source forge
+                        </a>
+                        <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Nyaovidea_Gnome_24.11.1.iso">
+                            <span>🇩🇪</span>
+                            German server
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -113,9 +126,9 @@
     </main>
         
     <section id="installation">
-        <a class="category-title"><span class="highlight">Nyarch</span> is easy to install</a>
+        <h2 class="category-title"><span class="highlight">Nyarch</span> is easy to install</h2>
         <div class="installation-gallery-container">
-            <button class="installation-btn installation-left-btn" aria-label="Scroll left">&#8592;</button>
+            <button class="installation-btn installation-left-btn" aria-label="Scroll left"><i class="nf nf-oct-arrow_left"></i></button>
             <div class="installation-gallery">
                 <img src="images/install/step6.png" alt="Step 6" class="installation-img prev-prev">
                 <img src="images/install/step7.png" alt="Step 7" class="installation-img prev">
@@ -125,12 +138,12 @@
                 <img src="images/install/step4.png" alt="Step 4" class="installation-img">
                 <img src="images/install/step5.png" alt="Step 5" class="installation-img">
             </div>
-            <button class="installation-btn installation-right-btn" aria-label="Scroll right">&#8594;</button>
+            <button class="installation-btn installation-right-btn" aria-label="Scroll right"><i class="nf nf-oct-arrow_right"></i></button>
         </div>
     </section>
 
     <section id="applications">
-        <a class="category-title">Enhance your <span class="highlight">Weebflow</span> with our pre-installed applications</a>
+        <h2 class="category-title">Enhance your <span class="highlight">Weebflow</span> with our pre-installed applications</h2>
         <div class="pre-installed-apps-icon">
             <img src="images/apps/icons/nyaofetch.png" alt="nyaofetch" class="app-icon" data-app="1">
             <img src="images/apps/icons/catgirl.png" alt="catgirl" class="app-icon" data-app="2">
@@ -222,7 +235,7 @@
     </section>
 
     <section id="customization">
-        <a class="category-title white">Enjoy <span class="highlight">Nyarch</span>'s customizability</a>
+        <h2 class="category-title white">Enjoy <span class="highlight">Nyarch</span>'s customizability</h2>
         <div class="theme-color-picker">
             <div class="theme-color-circle" style="--circle-color:#643f00;" onclick="ChangeThemeColor(this, '#643f00')"></div>
             <div class="theme-color-circle" style="--circle-color:#005142;" onclick="ChangeThemeColor(this, '#005142')"></div>
@@ -271,45 +284,45 @@
     </section>
 
     <section id="contact">
-        <h2><span class="highlight orange">Keep in touch</span> with us!</h2>
+        <h2 class="category-title"><span class="highlight orange">Keep in touch</span> with us!</h2>
         <ul class="socials">
             <li>
-                <a class="social-link discord" target="_blank" href="">
+                <a class="social-link discord" target="_blank" href="https://discord.gg/xuw6BNXXE7">
                     <i class="nf nf-fa-discord"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link telegram" target="_blank" href="">
+                <a class="social-link telegram" target="_blank" href="https://t.me/nyarchlinux">
                     <i class="nf nf-fa-telegram"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link mastodon" target="_blank" href="">
+                <a class="social-link mastodon" target="_blank" href="https://social.linux.pizza/@nyarchlinux">
                     <i class="nf nf-fa-mastodon"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link github" target="_blank" href="">
+                <a class="social-link github" target="_blank" href="https://github.com/NyarchLinux">
                     <i class="nf nf-fa-github"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link x" target="_blank" href="">
+                <a class="social-link x" target="_blank" href="https://x.com/NyarchLinux">
                     <i class="nf nf-dev-twitter"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link reddit" target="_blank" href="">
+                <a class="social-link reddit" target="_blank" href="https://www.reddit.com/r/nyarchlinux/">
                     <i class="nf nf-fa-reddit"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link youtube" target="_blank" href="">
+                <a class="social-link youtube" target="_blank" href="https://www.youtube.com/@NyarchLinuxYT">
                     <i class="nf nf-fa-youtube"></i>
                 </a>
             </li>
             <li>
-                <a class="social-link instagram" target="_blank" href="">
+                <a class="social-link instagram" target="_blank" href="https://instagram.com/nyarchlinux">
                     <i class="nf nf-fa-instagram"></i>
                 </a>
             </li>
@@ -330,7 +343,7 @@
                 <a href="#">Home</a>
             </li>
             <li class="footer-link">
-                <a target="_blank" href="">Discord</a>
+                <a href="#contact">Contact</a>
             </li>
             <li class="footer-link">
                 <a href="#faq">FAQ</a>

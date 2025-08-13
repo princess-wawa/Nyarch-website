@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const nvidiaBtn = document.querySelector('.nvidia-version');
     const dropdownContent = document.querySelector('.nvidia-options');
+    const navbarCollapseButton = document.querySelector('.navbar-collapse-button');
+
+    // Ensure the dropdown is hidden initially
+    if (navbarCollapseButton) navbarCollapseButton.classList.remove('active');
+
+    navbarCollapseButton.addEventListener('click', () => {
+        navbarCollapseButton.classList.toggle('active');
+    });
 
     let isHovered = false;
 
