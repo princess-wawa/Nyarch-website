@@ -93,16 +93,6 @@ nav {
     width: 190px;
 }
 
-.locations {
-    top: calc(100% + 125px) !important;
-    right: calc(12vw + 202px);
-}
-
-.nvidia-options {
-    top: calc(100% + 170px) !important;
-    right: calc(12vw + 202px);
-}
-
 .dropdown-content {
     top: calc(100% - 10px);
 }
@@ -279,6 +269,33 @@ nav {
     .links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .dropdown-content {
+        top: 1rem;
+    }
+
+    .download .dropdown-content {
+        position: relative;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        width: 100%
+    }
+
+    .download:hover .dropdown-content,
+    .download .dropdown-content:hover {
+        max-height: 18rem; /* Adjust as needed */
+    }
+
+    .download {
+        position: relative;
+    }
+
+    .locations, .nvidia-options {
+        bottom: 0 !important;
+        right: 0;
     }
 }
 
