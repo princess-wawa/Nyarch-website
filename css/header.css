@@ -234,12 +234,12 @@ nav {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        width: calc(100% + 1rem);
-        left: -1rem;
+        width: 75%;
+        right: -1rem;
         top: 0;
         height: 100dvh;
         display: flex; /* Hide by default */
-        transform: translateX(-100%); /* Hide off-screen */
+        transform: translateX(calc(95% + 1rem)); /* Hide off-screen */
         background-color: var(--black);
         transition: transform 0.3s ease-in-out;
     }
@@ -296,6 +296,12 @@ nav {
     .locations, .nvidia-options {
         bottom: 0 !important;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .navbar-collapse {
+        width: calc(100% + 1rem);
     }
 }
 
