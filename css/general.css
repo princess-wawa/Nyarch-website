@@ -33,7 +33,7 @@
 .category-title {
     font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 500;
-    font-size: 3vw;
+    font-size: clamp(2rem, -0.5rem + 8vw, 3rem);
     text-align: center;
 }
 
