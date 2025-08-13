@@ -17,8 +17,7 @@
 }
 
 .app-icon {
-    width: clamp(2rem, -2.75rem + 12vw, 4.5rem);;
-    height: clamp(2rem, -2.75rem + 12vw, 4.5rem);;
+    width: clamp(2rem, -2.75rem + 17vw, 4.5rem);
     cursor: pointer;
     transition: transform 0.2s;
 }
