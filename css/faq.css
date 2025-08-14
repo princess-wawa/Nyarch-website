@@ -45,9 +45,9 @@
     content: '';
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url('/images/icons/chevron-up-solid-full.svg');
-    background-size: cover;
-    transition: transform 0.3s ease-in-out;
+    mask: url('/images/icons/chevron-up-solid-full.svg') no-repeat center/contain;
+    background: var(--white);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .accordion-title.active {
@@ -57,10 +57,12 @@
 
 .accordion-title.active:after {
     transform: rotate(180deg);
+    background: var(--pink)
 }
 
 .accordion-title * {
     font-size: inherit;
+    font-weight: normal;
 }
 
 .accordion-content {
@@ -72,7 +74,7 @@
 
 .accordion-content-wrapper {
     background-color: var(--light-black-dark);
-    color: var(--white);
+    color: var(--darker-white);
     font-size: inherit;
     border: none;
     border-top: 1px solid var(--black);
