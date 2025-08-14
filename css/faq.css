@@ -38,7 +38,11 @@
     cursor: pointer;
     border: none;
     border-radius: .5rem;
-    transition: border-radius 0.3s ease-in-out;
+    transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.accordion-title:hover {
+    background-color: var(--bright-light-black);
 }
 
 .accordion-title:after {
