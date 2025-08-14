@@ -1,0 +1,120 @@
+#faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+.accordion-container {
+    width: 50%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.accordion-title {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    font-size: inherit;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-black);
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--light-black);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.accordion-title:after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('/images/icons/caret-top-solid-full.svg');
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-title.active:after {
+    transform: rotate(180deg);
+}
+
+.accordion-title * {
+    font-size: inherit;
+}
+
+.accordion-content {
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.accordion-content-wrapper {
+    background-color: var(--sightly-light-black);
+    color: var(--white);
+    font-size: inherit;
+    border: 1px solid var(--light-black);
+    border-top: none;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+}
+
+.accordion-content-wrapper a {
+    color: var(--sky-blue);
+    text-decoration: none;
+}
+
+.accordion-content-wrapper a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    #faq {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .accordion-container {
+        width: 75%;
+    }
+
+    .accordion-title {
+        font-size: 1rem;
+    }
+
+    .accordion-content-wrapper {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-container {
+        width: 100%;
+    }
+
+    .accordion-title {
+        font-size: 0.9rem;
+    }
+}

@@ -5,5 +5,5 @@
 - [x] Fix diverse design issues
 - [ ] Add the technical features and the system requirements sections
 - [ ] Add the download section
-- [ ] Add the FAQ section
+- [x] Add the FAQ section
 - [x] Add a proper footer
