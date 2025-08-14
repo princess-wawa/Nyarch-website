@@ -23,6 +23,7 @@
     flex-direction: column;
     width: 100%;
     font-size: 1.25rem;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-title {
@@ -35,26 +36,37 @@
     background-color: var(--light-black);
     color: var(--white);
     cursor: pointer;
-    border: 1px solid var(--light-black);
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.accordion-title:hover {
+    background-color: var(--bright-light-black);
 }
 
 .accordion-title:after {
     content: '';
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url('/images/icons/caret-top-solid-full.svg');
-    background-size: cover;
-    transition: transform 0.3s ease-in-out;
+    mask: url('/images/icons/chevron-up-solid-full.svg') no-repeat center/contain;
+    background: var(--white);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.accordion-title.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .accordion-title.active:after {
     transform: rotate(180deg);
+    background: var(--pink)
 }
 
 .accordion-title * {
     font-size: inherit;
+    font-weight: normal;
 }
 
 .accordion-content {
@@ -65,11 +77,11 @@
 }
 
 .accordion-content-wrapper {
-    background-color: var(--sightly-light-black);
-    color: var(--white);
+    background-color: var(--light-black-dark);
+    color: var(--darker-white);
     font-size: inherit;
-    border: 1px solid var(--light-black);
-    border-top: none;
+    border: none;
+    border-top: 1px solid var(--black);
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     display: flex;
