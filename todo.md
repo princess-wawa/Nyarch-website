@@ -3,7 +3,7 @@
 - [x] Add css reset and make it fit the current designs
 - [x] Use HTML5 anchors instead of divs
 - [x] Fix diverse design issues
-- [ ] Add the technical features and the system requirements sections
+- [x] Add the technical features and the system requirements sections
 - [ ] Add the download section
 - [x] Add the FAQ section
 - [x] Add a proper footer
