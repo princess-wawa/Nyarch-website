@@ -7,3 +7,4 @@
 - [ ] Add the download section
 - [x] Add the FAQ section
 - [x] Add a proper footer
+- [ ] Make most website elements such as links and icons follow the chosen theme
