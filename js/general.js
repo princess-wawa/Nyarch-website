@@ -1,3 +1,8 @@
+AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out'
+});
+
 window.addEventListener('scroll', function() {
     const elements = document.querySelectorAll('.highlight');
     const triggerPoint = window.innerHeight * 0.8;

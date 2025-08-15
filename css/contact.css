@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 2rem;
     gap: 2rem;
     background-color: var(--yellow);
-    min-height: 75vh;
+    /*min-height: 75vh;*/
     color: var(--black);
 }
 
@@ -15,7 +15,7 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    max-width: 40%;
+    max-width: 50%;
     flex-wrap: wrap;
     list-style: none;
 }
