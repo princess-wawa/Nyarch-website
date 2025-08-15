@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/logos/nyarch.svg">
     <title>Nyarch Linux - Home</title>
-    <link rel="stylesheet" href="css/installation.css">
+    <link rel="stylesheet" href="css/aos.css">
     <script src="js/tinycolor.js"></script>
+    <script src="js/aos.js"></script>
 </head>
 <body>
     <header id="header">
@@ -63,42 +64,46 @@
                             <img src="images/logos/github.svg" alt="github">
                             Source code
                         </a>
-                        <button class="download-option our-servers">
-                            <img src="images/logos/nyarch.svg" alt="Nyarch">
-                            Our servers
-                        </button>
-                        <button class="download-option nvidia-version">
-                            <img src="images/logos/Nvidia.svg" alt="Nvidia">
-                            Nvidia version
-                        </button>
-                    </li>
-                    <li class="locations">
-                        <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                            <span>🇩🇪</span>
-                            Germany
-                        </a>
-                        <a class="download-option" target="_blank" href="https://sgmirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                            <span>🇸🇬</span>
-                            Singapore
-                        </a>
-                        <a class="download-option" target="_blank" href="https://nymirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
-                            <span>🇺🇸</span>
-                            New york
-                        </a>
-                    </li>
-                    <li class="nvidia-options">
-                        <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
-                            <img src="images/logos/telegram.svg" alt="telegram">
-                            Telegram
-                        </a>
-                        <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
-                            <img src="images/logos/forge.svg" alt="forge">
-                            Source forge
-                        </a>
-                        <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Nyaovidea_Gnome_24.11.1.iso">
-                            <span>🇩🇪</span>
-                            German server
-                        </a>
+                        <div class="dropdown">
+                            <button class="download-option our-servers">
+                                <img src="images/logos/nyarch.svg" alt="Nyarch">
+                                Our servers
+                            </button>
+                            <div class="locations">
+                                <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                                    <span>🇩🇪</span>
+                                    Germany
+                                </a>
+                                <a class="download-option" target="_blank" href="https://sgmirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                                    <span>🇸🇬</span>
+                                    Singapore
+                                </a>
+                                <a class="download-option" target="_blank" href="https://nymirror.nyarchlinux.moe/Nyarch_Gnome_24.11.1.iso">
+                                    <span>🇺🇸</span>
+                                    New york
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="download-option nvidia-version">
+                                <img src="images/logos/Nvidia.svg" alt="Nvidia">
+                                Nvidia version
+                            </button>
+                            <div class="nvidia-options">
+                                <a class="download-option" target="_blank" href="https://nyarchlinuxrepo.t.me/">
+                                    <img src="images/logos/telegram.svg" alt="telegram">
+                                    Telegram
+                                </a>
+                                <a class="download-option" target="_blank" href="https://sourceforge.net/projects/nyarchlinux/files">
+                                    <img src="images/logos/forge.svg" alt="forge">
+                                    Source forge
+                                </a>
+                                <a class="download-option" target="_blank" href="https://mirror.nyarchlinux.moe/Nyarch_Nyaovidea_Gnome_24.11.1.iso">
+                                    <span>🇩🇪</span>
+                                    German server
+                                </a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -111,11 +116,11 @@
         </div>
         <div class="landing-content">
             <h1 class="text-container">
-                <span class="welcome-text">Welcome to</span>
-                <span class="nyarch-text">Nyarch <span>Linux</span></span>
+                <span class="welcome-text" data-aos="fade-up">Welcome to</span>
+                <span class="nyarch-text" data-aos-delay="100" data-aos="fade-up">Nyarch <span>Linux</span></span>
             </h1>
-            <img src="images/other/release.png" alt="Release Image">
-            <div class="version-text">Version 24.04</div>
+            <img data-aos="fade-up" data-aos-delay="200" src="images/other/release.png" alt="Release Image">
+            <div data-aos="fade-up" data-aos-delay="300" class="version-text">Version 24.04</div>
         </div>
         <div class="transition">
             <div class="wave wave1"></div>
@@ -126,8 +131,8 @@
     </main>
         
     <section id="installation">
-        <h2 class="category-title"><span class="highlight">Nyarch</span> is easy to install</h2>
-        <div class="installation-gallery-container">
+        <h2 class="category-title" data-aos="fade-up"><span class="highlight">Nyarch</span> is easy to install</h2>
+        <div data-aos="zoom-in-up" class="installation-gallery-container">
             <button class="installation-btn installation-left-btn" aria-label="Scroll left"><i class="nf nf-oct-arrow_left"></i></button>
             <div class="installation-gallery">
                 <img src="images/install/step6.png" alt="Step 6" class="installation-img prev-prev">
@@ -143,17 +148,17 @@
     </section>
 
     <section id="applications">
-        <h2 class="category-title">Enhance your <span class="highlight">Weebflow</span> with our pre-installed applications</h2>
+        <h2 class="category-title" data-aos="fade-up">Enhance your <span class="highlight">Weebflow</span> with our pre-installed applications</h2>
         <div class="pre-installed-apps-icon">
-            <img src="images/apps/icons/nyaofetch.png" alt="nyaofetch" class="app-icon" data-app="1">
-            <img src="images/apps/icons/catgirl.png" alt="catgirl" class="app-icon" data-app="2">
-            <img src="images/apps/icons/waifu.png" alt="waifu" class="app-icon" data-app="3">
-            <img src="images/apps/icons/nyarch-assistant.png" alt="nyarch-assistant" class="app-icon" data-app="4">
-            <img src="images/apps/icons/updater.png" alt="updater" class="app-icon" data-app="5">
-            <img src="images/apps/icons/scripts.png" alt="scripts" class="app-icon" data-app="6">
-            <img src="images/apps/icons/customize.png" alt="customize" class="app-icon" data-app="7">
+            <img data-aos="fade-up" src="images/apps/icons/nyaofetch.png" alt="nyaofetch" class="app-icon" data-app="1">
+            <img data-aos="fade-up" data-aos-delay="100" src="images/apps/icons/catgirl.png" alt="catgirl" class="app-icon" data-app="2">
+            <img data-aos="fade-up" data-aos-delay="200" src="images/apps/icons/waifu.png" alt="waifu" class="app-icon" data-app="3">
+            <img data-aos="fade-up" data-aos-delay="300" src="images/apps/icons/nyarch-assistant.png" alt="nyarch-assistant" class="app-icon" data-app="4">
+            <img data-aos="fade-up" data-aos-delay="400" src="images/apps/icons/updater.png" alt="updater" class="app-icon" data-app="5">
+            <img data-aos="fade-up" data-aos-delay="500" src="images/apps/icons/scripts.png" alt="scripts" class="app-icon" data-app="6">
+            <img data-aos="fade-up" data-aos-delay="600" src="images/apps/icons/customize.png" alt="customize" class="app-icon" data-app="7">
         </div>
-        <div class="app-details-container">
+        <div data-aos="fade-up" data-aos-delay="700" class="app-details-container">
             <div class="app-details" id="app-details-1">
                 <div class="app-details-flex">
                     <div class="app-details-left">
@@ -235,24 +240,24 @@
     </section>
 
     <section id="customization">
-        <h2 class="category-title white">Enjoy <span class="highlight">Nyarch</span>'s customizability</h2>
+        <h2 data-aos="fade-up" class="category-title white">Enjoy <span class="highlight">Nyarch</span>'s customizability</h2>
         <div class="theme-color-picker">
-            <div class="theme-color-circle" style="--circle-color:#643f00;" onclick="ChangeThemeColor(this, '#643f00')"></div>
-            <div class="theme-color-circle" style="--circle-color:#005142;" onclick="ChangeThemeColor(this, '#005142')"></div>
-            <div class="theme-color-circle" style="--circle-color:#722b65;" onclick="ChangeThemeColor(this, '#722b65')"></div>
-            <div class="theme-color-circle" style="--circle-color:#00497e;" onclick="ChangeThemeColor(this, '#00497e')"></div>
-            <div class="theme-color-circle" style="--circle-color:#225104;" onclick="ChangeThemeColor(this, '#225104')"></div>
-            <div class="theme-color-circle" style="--circle-color:#004397;" onclick="ChangeThemeColor(this, '#004397')"></div>
-            <div class="theme-color-circle" style="--circle-color:#7c2c1b;" onclick="ChangeThemeColor(this, '#7c2c1b')"></div>
-            <div class="theme-color-circle" style="--circle-color:#00504e;" onclick="ChangeThemeColor(this, '#00504e')"></div>
-            <div class="theme-color-circle" style="--circle-color:#403c8e;" onclick="ChangeThemeColor(this, '#403c8e')"></div>
-            <div class="theme-color-circle" style="--circle-color:#3d4c00;" onclick="ChangeThemeColor(this, '#3d4c00')"></div>
-            <div class="theme-color-circle" style="--circle-color:#64307c;" onclick="ChangeThemeColor(this, '#64307c')"></div>
-            <div class="theme-color-circle" style="--circle-color:#005137;" onclick="ChangeThemeColor(this, '#005137')"></div>
-            <div class="theme-color-circle" style="--circle-color:#4e4800;" onclick="ChangeThemeColor(this, '#4e4800')"></div>
+            <div data-aos="fade-up" class="theme-color-circle" style="--circle-color:#643f00;" onclick="ChangeThemeColor(this, '#643f00')"></div>
+            <div data-aos="fade-up" data-aos-delay="50" class="theme-color-circle" style="--circle-color:#005142;" onclick="ChangeThemeColor(this, '#005142')"></div>
+            <div data-aos="fade-up" data-aos-delay="150" class="theme-color-circle" style="--circle-color:#722b65;" onclick="ChangeThemeColor(this, '#722b65')"></div>
+            <div data-aos="fade-up" data-aos-delay="200" class="theme-color-circle" style="--circle-color:#00497e;" onclick="ChangeThemeColor(this, '#00497e')"></div>
+            <div data-aos="fade-up" data-aos-delay="250" class="theme-color-circle" style="--circle-color:#225104;" onclick="ChangeThemeColor(this, '#225104')"></div>
+            <div data-aos="fade-up" data-aos-delay="300" class="theme-color-circle" style="--circle-color:#004397;" onclick="ChangeThemeColor(this, '#004397')"></div>
+            <div data-aos="fade-up" data-aos-delay="350" class="theme-color-circle" style="--circle-color:#7c2c1b;" onclick="ChangeThemeColor(this, '#7c2c1b')"></div>
+            <div data-aos="fade-up" data-aos-delay="400" class="theme-color-circle" style="--circle-color:#00504e;" onclick="ChangeThemeColor(this, '#00504e')"></div>
+            <div data-aos="fade-up" data-aos-delay="450" class="theme-color-circle" style="--circle-color:#403c8e;" onclick="ChangeThemeColor(this, '#403c8e')"></div>
+            <div data-aos="fade-up" data-aos-delay="500" class="theme-color-circle" style="--circle-color:#3d4c00;" onclick="ChangeThemeColor(this, '#3d4c00')"></div>
+            <div data-aos="fade-up" data-aos-delay="550" class="theme-color-circle" style="--circle-color:#64307c;" onclick="ChangeThemeColor(this, '#64307c')"></div>
+            <div data-aos="fade-up" data-aos-delay="600" class="theme-color-circle" style="--circle-color:#005137;" onclick="ChangeThemeColor(this, '#005137')"></div>
+            <div data-aos="fade-up" data-aos-delay="650" class="theme-color-circle" style="--circle-color:#4e4800;" onclick="ChangeThemeColor(this, '#4e4800')"></div>
         </div>
         <div class="customization-flex-container">
-            <div class="customization-flex-item theme-settings">
+            <div data-aos="fade-right" class="customization-flex-item theme-settings">
                 <h3 class="customization-setting">Taskbar</h3>
                 <div class="customization-options">
                     <button type="button" class="btn btn-dynamic grow" onclick="ChangeTaskbarStyle('none')">None</button>
@@ -276,17 +281,17 @@
                     <button type="button" class="btn btn-dynamic grow" onclick="ToggleArcMenu('False')">No</button>
                 </div>
             </div>
-            <div class="customization-flex-item theme-preview">
-            <h3>preview</h3>
-            <p>the preview of the themes aaaaaaaaaaaaaaaaa</p>
+            <div data-aos="fade-left" class="customization-flex-item theme-preview">
+                <h3>preview</h3>
+                <p>the preview of the themes aaaaaaaaaaaaaaaaa</p>
             </div>
         </div>
     </section>
 
     <section id="faq">
-        <h2 class="category-title">FAQ</h2>
+        <h2 data-aos="fade-up" class="category-title">FAQ</h2>
         <div class="accordion-container">
-            <div class="accordion">
+            <div data-aos="fade-right" class="accordion">
                 <div class="accordion-title">
                     <h3>Is This A Real Distro?</h3>
                 </div>
@@ -298,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-left" class="accordion">
                 <div class="accordion-title">
                     <h3>Why?</h3>
                 </div>
@@ -310,7 +315,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-right" class="accordion">
                 <div class="accordion-title">
                     <h3>How Can I Install This Thing?</h3>
                 </div>
@@ -323,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-left" class="accordion">
                 <div class="accordion-title">
                     <h3>Do You Support NVIDIA GPUs?</h3>
                 </div>
@@ -335,7 +340,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-right" class="accordion">
                 <div class="accordion-title">
                     <h3>Is It Safe To Use This Thing?</h3>
                 </div>
@@ -350,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-left" class="accordion">
                 <div class="accordion-title">
                     <h3>Is Nyarch Beginner Friendly?</h3>
                 </div>
@@ -365,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div data-aos="fade-right" class="accordion">
                 <div class="accordion-title">
                     <h3>Is The AI Thingy Thing Privacy Friendly?</h3>
                 </div>
@@ -381,44 +386,44 @@
     </section>
 
     <section id="contact">
-        <h2 class="category-title"><span class="highlight orange">Keep in touch</span> with us!</h2>
+        <h2 data-aos="fade-up" class="category-title"><span class="highlight orange">Keep in touch</span> with us!</h2>
         <ul class="socials">
-            <li>
+            <li data-aos="fade-up" data-aos-delay="50">
                 <a class="social-link discord" target="_blank" href="https://discord.gg/xuw6BNXXE7">
                     <i class="nf nf-fa-discord"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
                 <a class="social-link telegram" target="_blank" href="https://t.me/nyarchlinux">
                     <i class="nf nf-fa-telegram"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="150">
                 <a class="social-link mastodon" target="_blank" href="https://social.linux.pizza/@nyarchlinux">
                     <i class="nf nf-fa-mastodon"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="200">
                 <a class="social-link github" target="_blank" href="https://github.com/NyarchLinux">
                     <i class="nf nf-fa-github"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="250">
                 <a class="social-link x" target="_blank" href="https://x.com/NyarchLinux">
                     <i class="nf nf-dev-twitter"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="300">
                 <a class="social-link reddit" target="_blank" href="https://www.reddit.com/r/nyarchlinux/">
                     <i class="nf nf-fa-reddit"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="350">
                 <a class="social-link youtube" target="_blank" href="https://www.youtube.com/@NyarchLinuxYT">
                     <i class="nf nf-fa-youtube"></i>
                 </a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-delay="400">
                 <a class="social-link instagram" target="_blank" href="https://instagram.com/nyarchlinux">
                     <i class="nf nf-fa-instagram"></i>
                 </a>
