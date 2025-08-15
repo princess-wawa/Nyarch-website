@@ -17,6 +17,10 @@
     --highlight-color: var(--pink);
 }
 
+.highlight.pink-dark {
+    --highlight-color: var(--pink-dark);
+}
+
 .highlight.orange {
     --highlight-color: var(--orange);
 }
