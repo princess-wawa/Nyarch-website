@@ -11,13 +11,13 @@ footer {
 }
 
 footer a {
-    color: var(--pink);
+    color: var(--primary-light);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
-    color: var(--pink-dark);
+    color: var(--primary);
     text-decoration: underline;
 }
 

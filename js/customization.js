@@ -23,13 +23,17 @@ function ChangeThemeColor(target, newColor) {
     const color = tinycolor(newColor); // Use tinycolor to handle the color manipulation
 
     const primary = color.toString();
-    const secondary = color.getLuminance() > 0.5 ? color.darken(15).toString() : color.lighten(15).toString();
+    const primaryLight = color.lighten(10).toString();
+    const primaryDark = color.darken(10).toString();
+    const primaryInteractive = color.getLuminance() > 0.5 ? color.darken(15).toString() : color.lighten(15).toString();
     const textColor = color.getLuminance() > 0.5 ? "#1a1a1a" : "#fff";
 
-    themeSettings.style.setProperty("--btn-dynamic-bg", primary);
-    themeSettings.style.setProperty("--btn-dynamic-hover-bg", secondary);
-    themeSettings.style.setProperty("--btn-dynamic-color", textColor);
-    themeSettings.style.setProperty("--btn-dynamic-hover-color", textColor);
+    const root = document.documentElement;
+    root.style.setProperty("--primary", primary);
+    root.style.setProperty("--primary-light", primaryLight);
+    root.style.setProperty("--primary-dark", primaryDark);
+    root.style.setProperty("--primary-text-emphasis", textColor);
+    root.style.setProperty("--primary-interactive", primaryInteractive);
 
     // to wawa: do the rest of the stuff related to the colors here, just like I did.
 }

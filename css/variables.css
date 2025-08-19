@@ -8,11 +8,16 @@
     --light-black-dark: #292929;
     --pink: #F092DD;
     --pink-dark: #d66bb2;
+    --pink-darker: #b84f8c;
     --blue: #042f60;
     --dark-blue: #052447;
     --sky-blue: #00aaff;
+    --dark-sky-blue: #0088cc;
+    --sky-blue-light: #66ccff;
     --gray: #b0b0b0;
     --orange: #ff8c00;
+    --dark-orange: #e07b00;
+    --light-orange: #ffb84d;
     --yellow: #ffcc00;
 
     --discord-blue: #5865F2;
@@ -27,4 +32,21 @@
     --dark-youtube-red: #cc0000;
     --instagram-pink: #c13584;
     --dark-instagram-pink: #a32b6c;
+
+    /* Defaults */
+    --primary: var(--pink-dark);
+    --primary-light: var(--pink);
+    --primary-dark: var(--pink-darker);
+    --primary-text-emphasis: var(--white);
+    --primary-interactive: var(--primary-dark); /* Used for stuff such as hover effects */
+    --secondary: var(--sky-blue);
+    --secondary-light: var(--sky-blue-light);
+    --secondary-dark: var(--dark-sky-blue);
+    --tertiary: var(--orange);
+    --tertiary-light: var(--light-orange);
+    --tertiary-dark: var(--dark-orange);
+
+    --highlight-color: var(--secondary);
+    --link-color: var(--primary-light);
+    --link-hover-color: var(--primary);
 }
