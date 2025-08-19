@@ -61,7 +61,7 @@
 
 .accordion-title.active:after {
     transform: rotate(180deg);
-    background: var(--pink)
+    background: var(--primary-light)
 }
 
 .accordion-title * {
@@ -94,7 +94,7 @@
 }
 
 .accordion-content-wrapper a {
-    color: var(--sky-blue);
+    color: var(--link-color);
     text-decoration: none;
 }
 

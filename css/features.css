@@ -30,7 +30,7 @@
 
 .feature i {
     font-size: 5rem;
-    color: var(--pink-dark);
+    color: var(--primary);
 }
 
 .feature h3 {
@@ -70,7 +70,7 @@
 
 .requirement-item > i {
     font-size: 6rem;
-    color: var(--pink-dark);
+    color: var(--primary);
 }
 
 .requirement-item h3 {
@@ -98,7 +98,7 @@
 }
 
 .requirement-item ul i {
-    color: var(--pink-dark);
+    color: var(--primary);
     font-size: 1.5rem;
 }
 

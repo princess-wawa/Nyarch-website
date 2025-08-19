@@ -1,6 +1,4 @@
 .highlight {
-    --highlight-color: #46c5f2;
-
     padding: 0 10px 0 10px;
     position: relative;
     font-weight: bold;
@@ -13,16 +11,16 @@
     animation: highlight-animate 1s forwards;
 }
 
-.highlight.pink {
-    --highlight-color: var(--pink);
+.highlight.primary {
+    --highlight-color: var(--primary);
 }
 
-.highlight.pink-dark {
-    --highlight-color: var(--pink-dark);
+.highlight.primary-dark {
+    --highlight-color: var(--primary-dark);
 }
 
-.highlight.orange {
-    --highlight-color: var(--orange);
+.highlight.tertiary {
+    --highlight-color: var(--tertiary);
 }
 
 @keyframes highlight-animate {
