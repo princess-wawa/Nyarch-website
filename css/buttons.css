@@ -35,10 +35,10 @@
 }
 
 .btn-dynamic {
-    --btn-color: var(--btn-dynamic-color, var(--blue));
-    --btn-bg: var(--btn-dynamic-bg, var(--white));
-    --btn-hover-bg: var(--btn-dynamic-hover-bg, var(--darker-white));
-    --btn-hover-color: var(--btn-dynamic-hover-color, var(--blue));
+    --btn-color: var(--primary-text-emphasis, var(--blue));
+    --btn-bg: var(--primary, var(--white));
+    --btn-hover-bg: var(--primary-interactive, var(--darker-white));
+    --btn-hover-color: var(--primary-text-emphasis, var(--blue));
 }
 
 .grow {
